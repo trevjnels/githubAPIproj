@@ -3,31 +3,17 @@ body {
   margin: 0;
 }
 
-button {
-  display: inline-block;
-  border: none;
-  margin: 4px;
-  padding: .6px 3px;
-  ;
-  font-weight: bold;
-  opacity: .8;
-  border-radius: 10px;
-  border: black 1px solid;
-  background-color: rgb(219, 232, 255);
-  text-shadow: 1px 1px 1px white;
-}
-
-button:hover {
-  background-color: lightgreen;
-}
-
-button:active {
-  background-color: lightpink;
-}
-
 /* element based cs */
 /* class-based below */
 /*  dimensions begin*/
+.bold {
+  font-weight: bold;
+}
+
+.output {
+  overflow-y: scroll;
+}
+
 .container {
   height: 100vh;
   width: 100vw;
@@ -40,27 +26,15 @@ button:active {
 }
 
 .top {
-  height: 50%;
+  height: 20.5%;
   width: 100%;
   border: 3px solid red;
 }
 
 .bottom {
-  height: 50%;
+  height: 79.5%;
   width: 100%;
   border: 2px solid blue;
-}
-
-.left {
-  width: 90%;
-  height: 90%;
-  border: 1px solid black;
-}
-
-.right {
-  width: 90%;
-  height: 90%;
-  border: 1px solid red;
 }
 
 .cube {
@@ -72,6 +46,8 @@ button:active {
 /*  dimensions end */
 .one {
   border-color: pink;
+  width: 100%;
+  height: 100%;
 }
 
 .two {
@@ -80,10 +56,12 @@ button:active {
 
 .three {
   border-color: brown;
+  height: 20%;
 }
 
 .four {
   border-color: purple;
+  height: 75%;
 }
 
 .footer {
@@ -106,6 +84,7 @@ button:active {
 
 .flex-col {
   flex-direction: column;
+  justify-content: space-evenly;
 }
 
 /*  */
@@ -140,4 +119,25 @@ button:active {
     background-color: lightyellow;
   } */
   /*  */
+}
+
+.footer-github-button {
+  display: inline-block;
+  border: none;
+  margin: 4px;
+  padding: .6px 3px;
+  font-weight: bold;
+  opacity: .8;
+  border-radius: 10px;
+  border: white 1px solid;
+  background-color: lightblue;
+  text-shadow: 1px 1px 1px white;
+}
+
+.footer-github-button:hover {
+  background-color: lightgreen;
+}
+
+.footer-github-button:active {
+  background-color: lightpink;
 }
